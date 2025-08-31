@@ -1,0 +1,79 @@
+@import '@/styles/fonts.scss';
+
+.index-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: #faf7f2;
+  padding: 0 16px;
+  z-index: 1000;
+  color: var(--Hark, #271f18);
+  font-family: 'Source Serif 4-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    height: 100px;
+    padding: 0 80px;
+    font-size: 18px;
+  }
+}
+
+.index-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.index-header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.index-logo {
+  width: 64px;
+  height: 56px;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    width: 105px;
+    height: 96px;
+  }
+}
+
+.yd-btn {
+  color: var(--Hark, #271f18);
+  font-family: 'Source Serif 4-Regular';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+}

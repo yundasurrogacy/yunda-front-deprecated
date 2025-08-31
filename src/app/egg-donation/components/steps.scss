@@ -1,0 +1,21 @@
+@import '@/styles/fonts.scss';
+
+.steps-container {
+  .ellipse {
+    fill: var(
+      --white-glass,
+      linear-gradient(0deg, rgba(251, 240, 218, 0.2) 0%, rgba(251, 240, 218, 0.2) 100%),
+      #bfc9bf
+    );
+    background-blend-mode: normal, overlay;
+    box-shadow: -1px 4px 38.9px 0px rgba(205, 212, 203, 0.96) inset;
+    border-radius: 50%;
+
+    /* 英文/Display */
+    font-family: Cormorant;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

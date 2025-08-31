@@ -1,0 +1,37 @@
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background: #bfc9bf;
+  padding: 0 80px;
+  z-index: 1000;
+  position: relative;
+  color: var(--Hark, #271f18);
+  font-family: 'Source Serif 4-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.admin-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.admin-logo {
+  width: 105px;
+  height: 96px;
+  flex-shrink: 0;
+}
+
+.yd-btn {
+  color: var(--Hark, #271f18);
+  font-family: 'Source Serif 4-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,127 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.index-page {
+  background-color: #faf7f2;
+
+  .index-first-section {
+    height: calc(100vh - 70px);
+    
+    @media (min-width: 768px) {
+      height: calc(100vh - 100px);
+    }
+  }
+
+  .ellipse {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    fill: var(
+      --white-glass,
+      linear-gradient(0deg, rgba(251, 240, 218, 0.2) 0%, rgba(251, 240, 218, 0.2) 100%),
+      #bfc9bf
+    );
+    background-blend-mode: normal, overlay;
+    box-shadow: -1px 4px 38.9px 0px rgba(205, 212, 203, 0.96) inset;
+
+    @media (min-width: 768px) {
+      width: 236px;
+      height: 236px;
+    }
+  }
+
+  .pink-circle {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #e7d6c8;
+    margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      width: 57px;
+      height: 57px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@keyframes index-logo-in {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes index-text-in {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes index-text-translate {
+  0% {
+    transform: translateY(30%);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes index-intro-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+@keyframes index-intro-text-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes index-intro-title-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.ellipse-container:hover .ellipse {
+  animation: bounce 0.6s ease;
+}

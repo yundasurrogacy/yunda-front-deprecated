@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/Cormorant-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant-Bold';
+  src: url('/Cormorant-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant-Italic';
+  src: url('/Cormorant-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Serif 4-Regular';
+  src: url('/SourceSerif4[opsz,wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Serif 4-Italic';
+  src: url('/SourceSerif4-Italic[opsz,wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+.font-64 {
+  /* 英文/Display */
+  font-family: Cormorant-Bold;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.font-40 {
+  /* 英文/Heading 1 (H1) */
+  font-family: Cormorant-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.font-32 {
+  /* 英文/Display */
+  font-family: Cormorant;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.font-20 {
+  /* 英文/Body Large160 */
+  font-family: 'Source Serif 4-Regular';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-18 {
+  /* 英文/Body Normal */
+  font-family: 'Source Serif 4-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-16-Regular {
+  /* 英文/Label */
+  font-family: 'Source Serif 4-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-16 {
+  /* 英文/Label */
+  font-family: 'Source Serif 4-Italic';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-14 {
+  /* 英文/Body Small ALLCAP */
+  font-family: 'Source Serif 4-Italic';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

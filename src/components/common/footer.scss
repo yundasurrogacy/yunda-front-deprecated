@@ -1,0 +1,73 @@
+.common-footer {
+  .text-2 {
+    /* 英文/Body Normal */
+    font-family: 'Source Serif 4-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .text-3 {
+    /* 英文/Body Small ALLCAP */
+    font-family: 'Source Serif 4-Regular';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .text-4 {
+    /* 英文/Label */
+    font-family: 'Source Serif 4-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .text-5 {
+    font-family: 'Source Serif 4-Regular';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (min-width: 768px) {
+      font-size: 11px;
+    }
+  }
+}
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}

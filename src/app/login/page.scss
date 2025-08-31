@@ -1,0 +1,10 @@
+@import '@/styles/common.scss';
+
+.login-page {
+  @extend .common;
+
+  :where(.css-dev-only-do-not-override-vrrzze).ant-btn-variant-solid {
+    width: 273px;
+    height: 50px;
+  }
+}

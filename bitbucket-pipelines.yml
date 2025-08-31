@@ -1,0 +1,27 @@
+image: node:20
+
+pipelines:
+  default:
+    - step:
+        name: Build and Deploy
+        caches:
+          - node
+        runs-on:
+          - self.hosted
+          - linux
+        script:
+          - apt-get update && apt-get install -y openssh-client rsync
+          - echo "Setting up SSH key"
+          - mkdir -p ~/.ssh
+          - echo "$VULTR_SSH_KEY" > ~/.ssh/id_rsa
+          - chmod 600 ~/.ssh/id_rsa
+          #- sudo ssh-keyscan 202.182.118.98 >> ~/.ssh/known_hosts
+          - echo "Installing dependencies"
+          - npm install -g pnpm
+          - pnpm install
+          - echo "Building the project"
+          - pnpm build
+          - echo "Uploading files to server"
+          - rsync -azP -e "ssh -p 32200" --delete dist/ root@202.182.118.98:/var/www/d-project-frontend/
+          - echo "Reloading Nginx (or restarting PM2)"
+          - ssh -p 32200 root@202.182.118.98 "sudo systemctl reload nginx"

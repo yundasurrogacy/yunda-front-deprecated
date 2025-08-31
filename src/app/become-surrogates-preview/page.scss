@@ -1,0 +1,62 @@
+@import '@/styles/common.scss';
+
+.become-surrogates-preview {
+  @extend .common;
+
+  .glass-box {
+    height: 618px;
+  }
+
+  :where(.css-dev-only-do-not-override-vrrzze).ant-btn-variant-solid {
+    display: flex;
+    width: 218px;
+    height: 60px;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 39px;
+    background: linear-gradient(0deg, #b2bbb2 0%, #b2bbb2 100%), #f6ecd8;
+    background-blend-mode: normal, overlay;
+  }
+
+  .dp-checkbox {
+    box-sizing: border-box;
+    width: 534px;
+    height: 60px;
+    flex-shrink: 0;
+    fill:
+      linear-gradient(0deg, rgba(234, 233, 208, 0.75) 0%, rgba(234, 233, 208, 0.75) 100%),
+      rgba(246, 236, 216, 0.5);
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+    color: #000;
+    border-radius: 10px;
+    font-family: 'Songti SC';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 4px solid transparent;
+    transition: all 0.3s ease;
+
+    &.checkbox-active {
+      border-color: #b2bbb2;
+      background:
+        linear-gradient(0deg, rgba(178, 187, 178, 0.2) 0%, rgba(178, 187, 178, 0.2) 100%),
+        rgba(246, 236, 216, 0.5);
+      box-shadow:
+        -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset,
+        0px 0px 10px rgba(178, 187, 178, 0.3);
+    }
+
+    &:hover {
+      border-color: #b2bbb2;
+      background:
+        linear-gradient(0deg, rgba(178, 187, 178, 0.1) 0%, rgba(178, 187, 178, 0.1) 100%),
+        rgba(246, 236, 216, 0.5);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.ivf-clinic {
+  &-card {
+    border-radius: 8px;
+    background: rgb(234, 234, 220);
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+  }
+}
+
+.ivf-clinic-btn-view-details {
+  background: #c7cec7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 6px 24px;
+  font-family: 'Source Serif Pro', serif;
+  box-shadow: 2px 2px 0 0 #e6e6e6;
+  transition: background 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: #b0bdb0;
+  }
+}
+
+.ivf-clinic-btn-secondary {
+  background: #c7cec7 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 12px 0;
+  font-family: 'Source Serif Pro', serif;
+  box-shadow: 2px 2px 0 0 #e6e6e6;
+  transition: background 0.2s;
+  cursor: pointer;
+  margin-top: 0;
+  &:hover {
+    background: #b0bdb0 !important;
+  }
+}

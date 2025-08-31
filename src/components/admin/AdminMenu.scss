@@ -1,0 +1,36 @@
+/* 菜单栏浮动样式 */
+.admin-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 100vh;
+  background:
+    linear-gradient(0deg, rgba(246, 236, 216, 0.15) 0%, rgba(246, 236, 216, 0.15) 100%),
+    rgba(191, 201, 191, 0.7);
+  box-shadow:
+    2px 2px 24px 0px rgba(169, 108, 66, 0.29),
+    -2px -2px 1px 0px rgba(169, 108, 66, 0.24) inset;
+  backdrop-filter: blur(20px);
+  animation: admin-menu-in 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes admin-menu-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.admin-menu-content {
+  color: var(--Hark, #271f18);
+  font-family: 'Source Serif 4-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+@import '@/styles/form-page.scss';
+@import '@/styles/animation.scss';
+
+.become-parents {
+  @extend .form-page;
+
+  .glass-container {
+    border-radius: 20px;
+    background: #fbf8f1;
+    background-blend-mode: normal, overlay;
+    box-shadow:
+      2px 2px 24px 0px rgba(169, 108, 66, 0.24),
+      -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+    background-image: url('/images/glass-bg.png');
+    background-repeat: repeat-y;
+    background-size: contain;
+  }
+}

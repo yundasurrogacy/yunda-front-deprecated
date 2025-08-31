@@ -1,0 +1,17 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.about-us {
+  .linear-gradient {
+    background: radial-gradient(circle, #fbf0db 40%, #faf7f2 100%);
+  }
+
+  /* 移动端特殊样式 */
+  @media (max-width: 767px) {
+    .team-section {
+      .container {
+        padding: 0 16px;
+      }
+    }
+  }
+}

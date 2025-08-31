@@ -1,0 +1,81 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.surrogacy-journey-overview-page {
+  background-color: #faf7f2;
+
+  .hero-section {
+    position: relative;
+    height: 676px;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-family: Cormorant-Bold;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+
+  .ellipse {
+    fill: var(
+      --white-glass,
+      linear-gradient(0deg, rgba(251, 240, 218, 0.2) 0%, rgba(251, 240, 218, 0.2) 100%),
+      #bfc9bf
+    );
+    background-blend-mode: normal, overlay;
+    box-shadow: -1px 4px 38.9px 0px rgba(205, 212, 203, 0.96) inset;
+    border-radius: 50%;
+
+    /* 英文/Display */
+    font-family: Cormorant;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .testimonials-section {
+    .testimonials-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      .testimonial-card {
+        background: #fbf0da;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+        padding: 40px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        img {
+          width: 220px;
+          height: 220px;
+          object-fit: cover;
+          border-radius: 16px;
+        }
+        .font-20 {
+          font-family: 'Source Serif 4-Regular';
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .font-18 {
+          font-family: 'Source Serif 4-Regular';
+          font-size: 18px;
+          font-weight: 400;
+        }
+        .font-16 {
+          font-family: 'Source Serif 4-Italic';
+          font-size: 16px;
+          font-weight: 400;
+          color: #a9a67d;
+        }
+      }
+    }
+  }
+
+  .linear-gradient {
+    background: linear-gradient(180deg, #bfc9bf 48.5%, rgba(255, 255, 255, 0) 100%);
+  }
+}

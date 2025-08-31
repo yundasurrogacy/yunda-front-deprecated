@@ -1,0 +1,27 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.price-page {
+  background-color: #faf7f2;
+
+  .index-first-section {
+    height: calc(100vh - 100px);
+  }
+
+  .pink-circle {
+    width: 57px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #e7d6c8;
+    margin-bottom: 25px;
+  }
+
+  .drivider {
+    width: 485px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #000;
+  }
+}

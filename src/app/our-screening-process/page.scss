@@ -1,0 +1,45 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.our-screening-process-page {
+  background-color: #faf7f2;
+
+  .hero-section {
+    position: relative;
+    height: 667px;
+    background: linear-gradient(180deg, #faf7f2 0%, rgba(191, 201, 191, 0.7) 100%);
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-cta {
+      button {
+        background: #fbf0da;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+        padding: 12px 32px;
+      }
+    }
+  }
+
+  .screening-includes-section {
+    position: relative;
+    .linear-gradient {
+      background: linear-gradient(180deg, #bfc9bf 48.5%, rgba(255, 255, 255, 0) 100%);
+      z-index: 1;
+    }
+    .screening-list {
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .requirements-section {
+    .requirements-list {
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

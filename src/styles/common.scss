@@ -1,0 +1,196 @@
+@import '@/styles/fonts.scss';
+
+.common {
+  background: #f7f4ee;
+
+  .title {
+    color: #271f18;
+
+    font-family: Cormorant-Bold;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .title-2 {
+    color: #271f18;
+
+    /* bigger */
+    font-family: 'Source Serif 4-Italic';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .title-3 {
+    color: #000;
+    font-family: 'Source Serif 4-Regular';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .text {
+    color: #271f18;
+    /* text */
+    font-family: 'Source Serif 4-Regular';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .text-2 {
+    color: #271f18;
+
+    font-family: 'Source Serif 4-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .ellipse {
+    z-index: 1;
+    width: 842px;
+    height: 842px;
+    flex-shrink: 0;
+    border-radius: 842px;
+    border: 1px solid #000;
+    background: #bfc9bf;
+    filter: blur(1000px);
+    &-bottom {
+      width: 842px;
+      height: 842px;
+      flex-shrink: 0;
+      border-radius: 842px;
+      border: 1px solid #000;
+      background: #bfc9bf;
+      filter: blur(153.5500030517578px);
+    }
+  }
+
+  .glass-box {
+    max-width: 1280px;
+    border-radius: 20px;
+    box-shadow:
+      2px 2px 24px 0px rgba(169, 108, 66, 0.24),
+      -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+    background-blend-mode: normal, overlay;
+    background-color: rgba(251, 240, 218, 0.2);
+  }
+
+  .ant-form-item-label > label {
+    color: #000;
+    font-family: 'Source Serif 4-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .ant-input:not(.ant-input-underlined),
+  .ant-select,
+  .ant-picker {
+    height: 60px;
+    border-radius: 10px;
+    background: #ebebde;
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+  }
+
+  .ant-input-password {
+    height: 60px;
+    border-radius: 10px;
+    background: #ebebde;
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+    .ant-input {
+      height: unset;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      backdrop-filter: none;
+      background-blend-mode: normal;
+      background-color: transparent;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .ant-input-underlined {
+    background: transparent;
+  }
+
+  .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 10px;
+    background: #ebebde;
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+  }
+
+  .ant-input-outlined:focus,
+  .ant-input-outlined:focus-within,
+  .ant-input-outlined:hover,
+  .ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    ):not(.ant-pagination-size-changer)
+    .ant-select-selector,
+  .ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+      .ant-pagination-size-changer
+    ):hover
+    .ant-select-selector,
+  .ant-picker-outlined:focus,
+  .ant-picker-outlined:focus-within {
+    border-color: unset;
+  }
+
+  .ant-form-item .ant-form-item-label > label.ant-form-item-required::before {
+    color: #000;
+  }
+
+  .ant-btn-variant-solid {
+    width: 273px;
+    height: 71px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #ebebde;
+    background-blend-mode: normal, overlay;
+    box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    backdrop-filter: blur(20px);
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner,
+  .ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+  .ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner,
+  .ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #bfc9bf;
+    border-color: #bfc9bf;
+  }
+
+  .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-checked:not(.ant-checkbox-disabled)
+    .ant-checkbox-inner {
+    background-color: #bfc9bf;
+    border-color: #bfc9bf;
+  }
+
+  .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+  .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+    border-color: #bfc9bf;
+  }
+
+  // checkbox and radio的边框
+  .ant-checkbox .ant-checkbox-inner,
+  .ant-radio-wrapper .ant-radio-inner {
+    background: transparent;
+  }
+}

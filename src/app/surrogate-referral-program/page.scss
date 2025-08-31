@@ -1,0 +1,9 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.surrogate-referral-program-page {
+  .linear-gradient {
+    background: linear-gradient(180deg, #bfc9bf 48.5%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+  }
+}

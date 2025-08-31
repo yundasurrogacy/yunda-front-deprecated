@@ -1,0 +1,35 @@
+@import '@/styles/fonts.scss';
+@import '@/styles/animation.scss';
+
+.eligibility-to-become-a-surrogate-page {
+  background-color: #faf7f2;
+
+  .hero-section {
+    position: relative;
+    height: 667px;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .qualifications-section {
+    .qualification-list {
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .disqualifying-section {
+    .disqualify-list {
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .linear-gradient {
+    background: linear-gradient(180deg, #bfc9bf 48.5%, rgba(255, 255, 255, 0) 100%);
+  }
+}

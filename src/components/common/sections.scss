@@ -1,0 +1,17 @@
+.sections {
+  &-sticky {
+    height: 50vh;
+    position: sticky;
+    --force-auto: initial;
+    top: var(--force-auto, calc(5% + var(--sticky-offset, 0px)));
+    bottom: var(--force-auto);
+    left: var(--force-auto);
+    right: var(--force-auto);
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 15%;
+    margin-bottom: 12%;
+    grid-area: 1 / 1 / 2 / 2;
+    --is-sticky: 1;
+  }
+}

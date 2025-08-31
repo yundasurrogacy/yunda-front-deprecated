@@ -1,0 +1,148 @@
+@import './fonts.scss';
+
+/* admin页面主背景 */
+.admin-bg {
+  min-height: 100vh;
+  background: rgba(251, 240, 218, 0.25);
+}
+
+.admin-main {
+  padding: 40px 80px;
+}
+
+.admin-card {
+  padding: 20px 25px;
+  border-radius: 20px;
+  background: #faf7f2;
+  background-blend-mode: normal, overlay;
+  box-shadow:
+    2px 2px 24px 0px rgba(169, 108, 66, 0.24),
+    -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+}
+
+.admin-icon-card {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background:
+    linear-gradient(0deg, rgba(234, 233, 208, 0.2) 0%, rgba(234, 233, 208, 0.2) 100%),
+    rgba(246, 236, 216, 0.5);
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  .img {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.admin-icon-card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text-small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.ant-btn {
+  border-radius: 8px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #bfc9bf 0%, #bfc9bf 100%), #bfc9bf;
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  color: #fff;
+
+  /* 英文/Label */
+  font-family: 'Source Serif 4-Italic';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  font-size: var(--title-size);
+  font-family: Cormorant-Bold;
+}
+
+.title-2 {
+  font-size: var(--title-size-2);
+  font-family: Cormorant-Regular;
+}
+
+.title-3 {
+  font-size: var(--title-size-3);
+  font-family: 'Source Serif 4-Regular';
+}
+
+.title-small {
+  font-size: var(--title-size-small);
+  font-family: Cormorant-Bold;
+}
+
+.text {
+  font-size: var(--text-size);
+  font-family: 'Source Serif 4-Regular';
+}
+
+.text-small {
+  font-size: var(--text-size-small);
+  font-family: 'Source Serif 4-Italic';
+}
+
+.search-input {
+  width: 142px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background:
+    linear-gradient(0deg, rgba(234, 233, 208, 0.2) 0%, rgba(234, 233, 208, 0.2) 100%),
+    rgba(246, 236, 216, 0.5);
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  border: none;
+  outline: none;
+  @extend .title-3;
+}
+
+.ant-collapse {
+  border: none;
+  outline: none;
+  background: transparent;
+  .ant-collapse-header {
+    @extend .title-3;
+  }
+  .ant-collapse-content {
+    border-top: 0;
+  }
+  .ant-collapse-item {
+    padding: 8px 24px;
+    border-radius: 10px !important;
+    margin-bottom: 20px;
+    background:
+      linear-gradient(0deg, rgba(234, 233, 208, 0.2) 0%, rgba(234, 233, 208, 0.2) 100%),
+      rgba(246, 236, 216, 0.5);
+    background-blend-mode: normal, overlay;
+    box-shadow:
+      -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset,
+      2px 2px 24px 0px rgba(169, 108, 66, 0.24);
+    backdrop-filter: blur(20px);
+
+    .ant-collapse-content {
+      background: transparent;
+    }
+  }
+}

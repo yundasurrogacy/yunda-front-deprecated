@@ -1,0 +1,14 @@
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* 从下方开始 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 回到正常位置 */
+  }
+}
+
+.content-appear {
+  animation: slide-up-fade-in 2s ease-out forwards;
+}

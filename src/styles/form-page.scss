@@ -1,0 +1,190 @@
+@import '@/styles/fonts.scss';
+
+.ant-form-item-label > label {
+  color: #000;
+  font-family: 'Source Serif 4-Regular';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 2px;
+}
+
+.ant-input:not(.ant-input-underlined),
+.ant-select,
+.ant-picker {
+  height: 60px;
+  border-radius: 10px;
+  background: #ebebde;
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  @extend .font-18;
+}
+
+.ant-input-password {
+  height: 60px;
+  border-radius: 10px;
+  background: #ebebde;
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  @extend .font-18;
+  .ant-input {
+    height: unset;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    background-blend-mode: normal;
+    background-color: transparent;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-underlined:focus,
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-underlined:hover,
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-underlined:focus-within,
+.ant-input-underlined {
+  background: transparent;
+  @extend .font-18;
+}
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  border-radius: 10px;
+  background: #ebebde;
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+  @extend .font-18;
+}
+
+.ant-form-item .ant-form-item-label > label.ant-form-item-required::before {
+  color: #000;
+}
+
+.ant-btn-variant-solid {
+  width: 273px;
+  height: 71px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #bfc9bf;
+  background-blend-mode: normal, overlay;
+  box-shadow: -2px -2px 1px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(20px);
+}
+
+:where(.css-dev-only-do-not-override-vrrzze).ant-checkbox-wrapper,
+:where(.css-dev-only-do-not-override-vrrzze).ant-radio-wrapper,
+:where(.css-dev-only-do-not-override-vrrzze).ant-picker .ant-picker-input > input {
+  @extend .font-18;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner,
+.ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #bfc9bf;
+  border-color: #bfc9bf;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  background-color: #bfc9bf;
+  border-color: #bfc9bf;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: #bfc9bf;
+}
+
+// 输入框错误
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-outlined.ant-input-status-error:not(
+    .ant-input-disabled
+  ),
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-outlined.ant-input-status-error:not(
+    .ant-input-disabled
+  ):focus,
+:where(.css-dev-only-do-not-override-vrrzze).ant-input-outlined.ant-input-status-error:not(
+    .ant-input-disabled
+  ):focus-within {
+  background: #ebebde;
+}
+
+// input and select hover
+.ant-input-outlined:focus,
+.ant-input-outlined:focus-within,
+.ant-input-outlined:hover,
+.ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector,
+.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+    .ant-pagination-size-changer
+  ):hover
+  .ant-select-selector,
+.ant-picker-outlined:focus,
+.ant-picker-outlined:focus-within,
+:where(.css-dev-only-do-not-override-vrrzze).ant-picker-outlined:hover {
+  border-color: #bfc9bf;
+  background: #ebebde;
+}
+
+// checkbox and radio的边框
+:where(.css-dev-only-do-not-override-vrrzze).ant-radio-wrapper .ant-radio-inner,
+:where(.css-dev-only-do-not-override-vrrzze).ant-checkbox .ant-checkbox-inner {
+  background: transparent;
+}
+
+// radio and checkbox checked
+:where(.css-dev-only-do-not-override-vrrzze).ant-radio-wrapper .ant-radio-checked .ant-radio-inner,
+:where(.css-dev-only-do-not-override-vrrzze).ant-checkbox
+  .ant-checkbox-checked
+  .ant-checkbox-inner {
+  border-color: #bfc9bf;
+  background: #bfc9bf;
+}
+
+// radio and checkbox hover
+.ant-radio-wrapper:hover :where(.css-dev-only-do-not-override-vrrzze).ant-radio-wrapper,
+:where(.css-dev-only-do-not-override-vrrzze).ant-radio-wrapper:hover .ant-radio-inner {
+  border-color: #bfc9bf;
+}
+
+// label font-size
+:where(.css-dev-only-do-not-override-vrrzze).ant-form-item .ant-form-item-label > label {
+  @extend .font-20;
+}
+
+.form-page {
+  background: #f7f4ee;
+
+  .ellipse {
+    z-index: 1;
+    width: 842px;
+    height: 842px;
+    flex-shrink: 0;
+    border-radius: 842px;
+    border: 1px solid #000;
+    background: #bfc9bf;
+    filter: blur(1000px);
+    &-bottom {
+      width: 842px;
+      height: 842px;
+      flex-shrink: 0;
+      border-radius: 842px;
+      border: 1px solid #000;
+      background: #bfc9bf;
+      filter: blur(153.5500030517578px);
+    }
+  }
+
+  :where(.css-dev-only-do-not-override-vrrzze).ant-checkbox {
+    align-self: flex-start;
+    transform: translateY(5px);
+  }
+}

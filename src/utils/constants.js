@@ -1,0 +1,12 @@
+export const ROLE_TYPE = {
+  ADMIN: 'ADMIN',
+  ACCOUNT_MANAGER: 'ACCOUNT_MANAGER',
+  INTENDED_PARENT: 'INTENDED_PARENT',
+  SURROGATE: 'SURROGATE'
+}
+
+export const LOCAL_STORE_KEYS = {
+  TOKEN: 'token',
+  ROLE: 'role',
+  USERINFO: 'userInfo'
+}

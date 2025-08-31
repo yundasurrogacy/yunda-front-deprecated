@@ -1,0 +1,12 @@
+.yd-progress-bar {
+  .yd-progress-bar-item {
+    width: 120px;
+    height: 5px;
+    border-radius: 6px;
+    background: #bfc9bf;
+  }
+
+  .yd-progress-bar-item.active {
+    background: #271f18;
+  }
+}
